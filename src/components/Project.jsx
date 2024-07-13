@@ -7,14 +7,14 @@ const Project = () => {
       tittle: "Aeroscape(Airline Reservation System)",
       description:
         "Aeroscape is an 'airline reservation system' which allows users to search for flights and book them. Users can search for the available flights, book their tickets and can even view them in their profile section. There is an admin panel also to store, maintain and manipulate the data.",
-      src: "/src/assets/project/aeroscape.png",
+      src: "/src/assets/aeroscape.png",
       link: "https://aeroscape.infinityfreeapp.com/",
     },
     {
       tittle: "MyPortfolio",
       description:
         "This is a portfolio website that can help you to know me a little. It is made using ReactJS and Tailwind CSS.",
-      src: "/src/assets/project/portfolio.png",
+      src: "/src/assets/portfolio.png",
       link: "https://kakkar2.github.io/MyPortfolio/",
     },
   ];
