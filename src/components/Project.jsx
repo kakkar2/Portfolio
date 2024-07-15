@@ -1,20 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTowerBroadcast } from "@fortawesome/free-solid-svg-icons";
 
+import aeroscape from "../assets/aeroscape.png";
+import portfolio from "../assets/portfolio.png";
+
 const Project = () => {
   const projects = [
     {
       tittle: "Aeroscape(Airline Reservation System)",
       description:
         "Aeroscape is an 'airline reservation system' which allows users to search for flights and book them. Users can search for the available flights, book their tickets and can even view them in their profile section. There is an admin panel also to store, maintain and manipulate the data.",
-      src: "/src/assets/aeroscape.png",
+      src: `${aeroscape}`,
       link: "https://aeroscape.infinityfreeapp.com/",
     },
     {
       tittle: "MyPortfolio",
       description:
         "This is a portfolio website that can help you to know me a little. It is made using ReactJS and Tailwind CSS.",
-      src: "/src/assets/portfolio.png",
+      src: `${portfolio}`,
       link: "https://kakkar2.github.io/MyPortfolio/",
     },
   ];
