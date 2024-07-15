@@ -23,7 +23,7 @@ const Project = () => {
   ];
 
   return (
-    <div className="flex flex-wrap mx-40 my-10" id="Project">
+    <div className="flex flex-wrap mx-10 md:mx-20 lg:mx-40 my-10" id="Project">
       <div className="text-center w-full">
         <h2 className="font-bold text-white text-3xl uppercase cursor-pointer">
           Project<span className="text-indigo-600">s</span>
@@ -32,9 +32,8 @@ const Project = () => {
       <div className="flex justify-between items-center flex-wrap gap-3 text-white p-10">
         {projects.map((item) => (
           <div
-            className="group flex-1 gap-2 items-center p-5 rounded-lg cursor-pointer bg-gray-800 shadow-lg h-auto"
+            className="group flex-1 gap-2 items-center p-5 rounded-lg cursor-pointer bg-gray-800 shadow-lg h-auto md:min-h-full lg:min-h-full"
             key={item.tittle}
-            style={{ minHeight: "100%" }}
           >
             <div className="flex-1 image bg-contain">
               <img
@@ -50,7 +49,9 @@ const Project = () => {
                 </h2>
               </div>
               <div className="description mb-3">
-                <p className="text-gray-400">{item.description}</p>
+                <p className="text-gray-400 text-justify md:text-left lg:text-left">
+                  {item.description}
+                </p>
               </div>
               <a
                 href={item.link}

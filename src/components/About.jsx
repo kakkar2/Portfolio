@@ -28,13 +28,13 @@ const skills = [
 const About = () => {
   return (
     <div className="bg-gray-900 p-2 md:p-10 lg:p-10" id="About">
-      <div className="mx-40 my-10">
+      <div className="mx-10 md:mx-20 lg:mx-40 my-10">
         <div className="text-center">
           <h2 className="font-bold text-white text-3xl uppercase cursor-pointer">
             About <span className="text-indigo-600">Me</span>
           </h2>
         </div>
-        <div className="flex flex-wrap">
+        <div className="md:flex lg:flex md:flex-wrap lg:flex-wrap">
           <div className="flex-1 text-white p-5">
             <div className="aboutImage">
               <img src={aboutImage} alt="ABOUTIMAGE" />
@@ -43,10 +43,12 @@ const About = () => {
           <div className="flex-1 text-white p-5">
             <div className="summary">
               <p className="text-gray-400 text-base mb-2">
-                Hello! I’m Lalit Kakkar, a passionate web developer with a
-                strong foundation in front-end and back-end development. By
-                building responsive websites and web applications, I turn ideas
-                into functional, user-friendly digital solutions.
+                Hello! I’m{" "}
+                <span className="font-bold text-indigo-600">Lalit Kakkar</span>,
+                a passionate web developer with a strong foundation in front-end
+                and back-end development. By building responsive websites and
+                web applications, I turn ideas into functional, user-friendly
+                digital solutions.
               </p>
               <p className="text-base text-gray-400 mb-4">
                 Beyond coding, I'm passionate about user experience (UX) design

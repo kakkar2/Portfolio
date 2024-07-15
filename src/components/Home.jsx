@@ -6,16 +6,16 @@ import { ReactTyped } from "react-typed";
 
 const Home = () => {
   return (
-    <div className="flex flex-wrap mx-40 my-10" id="Home">
+    <div className="flex flex-wrap mx-10 md:mx-20 lg:mx-40 my-10" id="Home">
       <div className="flex-auto text-white p-2 md:p-10 lg:p-10">
         <div className="title mb-5">
-          <h2 className="text-2xl md:leading-normal lg:leading-normal">
+          <h2 className="text-md md:text-2xl lg:text-2xl md:leading-normal lg:leading-normal">
             👋, I am
           </h2>
-          <h1 className="text-6xl lg:text-7xl md:text-7xl md:leading-normal  lg:leading-normal font-bold">
+          <h1 className="text-5xl lg:text-7xl md:text-7xl md:leading-normal  lg:leading-normal font-bold">
             Lalit Kakkar
           </h1>
-          <h2 className="text-xl md:text-2xl lg:text-2xl md:leading-normal lg:leading-normal">
+          <h2 className="text-md md:text-2xl lg:text-2xl md:leading-normal lg:leading-normal">
             I am{" "}
             <ReactTyped
               strings={[
@@ -40,7 +40,7 @@ const Home = () => {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="text-2xl hover:text-indigo-600 transition duration-300 ease-in-out hover:rotate-45"
+                className="text-xl md:text-2xl lg:text-2xl hover:text-indigo-600 transition duration-300 ease-in-out hover:rotate-45"
               />
             </a>
             <a
@@ -50,7 +50,7 @@ const Home = () => {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="text-2xl hover:text-indigo-600 transition duration-300 ease-in-out hover:rotate-45"
+                className="text-xl md:text-2xl lg:text-2xl hover:text-indigo-600 transition duration-300 ease-in-out hover:rotate-45"
               />
             </a>
           </div>
@@ -58,7 +58,7 @@ const Home = () => {
         <div className="connect hover:shadow-lg">
           <a
             href="/src/assets/fullStack_Cv.pdf"
-            className="text-sm bg-gray-700 px-2 py-3 rounded-lg hover:bg-indigo-600 transition duration-300 ease-in-out active:opacity-85"
+            className="text-sm bg-gray-700 px-1 py-2 md:px-2 md:py-3 lg:px-2 lg:py-3 rounded-lg hover:bg-indigo-600 transition duration-300 ease-in-out active:opacity-85"
             download={true}
           >
             Download CV <FontAwesomeIcon icon={faFileLines} />
