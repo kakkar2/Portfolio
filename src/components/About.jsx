@@ -34,10 +34,10 @@ const About = () => {
             About <span className="text-indigo-600">Me</span>
           </h2>
         </div>
-        <div className="md:flex lg:flex md:flex-wrap lg:flex-wrap">
-          <div className="flex-1 text-white p-5">
+        <div className="flex md:flex-wrap lg:flex-wrap">
+          <div className="flex-1 md:flex md:justify-center md:items-center text-white p-5">
             <div className="aboutImage">
-              <img src={aboutImage} alt="ABOUTIMAGE" />
+              <img src={aboutImage} loading="lazy" alt="ABOUTIMAGE" />
             </div>
           </div>
           <div className="flex-1 text-white p-5">
