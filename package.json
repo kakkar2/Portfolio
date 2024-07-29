@@ -2,7 +2,7 @@
   "homepage": "https://kakkar2.github.io/portfolio/",
   "name": "vite-project",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "source": "src/index.html",
   "type": "module",
   "scripts": {
