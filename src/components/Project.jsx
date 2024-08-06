@@ -23,7 +23,7 @@ const Project = () => {
   ];
 
   return (
-    <div className="flex flex-wrap mx-10 md:mx-20 lg:mx-40 my-10" id="Project">
+    <div className="flex flex-wrap mx-10 md:mx-10 lg:mx-20 my-10" id="Project">
       <div className="text-center w-full">
         <h2 className="font-bold text-white text-3xl uppercase cursor-pointer">
           Project<span className="text-indigo-600">s</span>

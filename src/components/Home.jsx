@@ -6,7 +6,7 @@ import { ReactTyped } from "react-typed";
 
 const Home = () => {
   return (
-    <div className="flex flex-wrap mx-10 md:mx-20 lg:mx-40 my-10" id="Home">
+    <div className="flex flex-wrap mx-10 md:mx-10 lg:mx-20 my-10" id="Home">
       <div className="flex-auto text-white p-2 md:p-5 lg:p-10">
         <div className="title mb-5">
           <h2 className="text-md md:text-1xl lg:text-2xl md:leading-normal lg:leading-normal">
@@ -30,7 +30,7 @@ const Home = () => {
               className="text-indigo-600 font-black"
             />
           </h2>
-          <p className="w-96 md:leading-normal lg:leading-normal mt-4">
+          <p className="w-72 md:w-96 lg:w-96 md:leading-normal lg:leading-normal mt-4">
             I am passionate to create and develop a clean UI/UX. My main stack
             currently is React.js in combination with Tailwind CSS.
           </p>

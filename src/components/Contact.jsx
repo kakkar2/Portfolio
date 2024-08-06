@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <div className="bg-gray-900 p-10" id="Contact">
-      <div className="mx-10 md:mx-20 lg:mx-40 my-10">
+      <div className="mx-10 md:mx-10 lg:mx-20 my-10">
         <div className="text-center mb-4">
           <h2 className="font-bold text-white text-3xl uppercase cursor-pointer">
             Contact <span className="text-indigo-600">Me</span>
