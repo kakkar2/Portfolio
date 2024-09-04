@@ -32,7 +32,7 @@ const Home = () => {
           </h2>
           <p className="w-72 md:w-96 lg:w-96 md:leading-normal lg:leading-normal mt-4">
             I am passionate to create and develop a clean UI/UX. My main stack
-            currently is React.js in combination with Tailwind CSS.
+            currently is MERN Stack.
           </p>
         </div>
         <div className="contact mb-5">
@@ -61,7 +61,7 @@ const Home = () => {
         </div>
         <div className="connect hover:shadow-lg">
           <a
-            href="https://drive.google.com/file/d/1xoy7d4iZNR-3sdyB-65h9VBHaUmX0XAs/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ssVtfNrzJdmwzNoTalTg-gmd4pZS53YM/view?usp=sharing"
             target="_blank"
             className="text-sm bg-gray-700 px-1 py-2 md:px-2 md:py-3 lg:px-2 lg:py-3 rounded-lg hover:bg-indigo-600 transition duration-300 ease-in-out active:opacity-85"
           >

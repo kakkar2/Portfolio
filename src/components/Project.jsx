@@ -1,24 +1,27 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTowerBroadcast } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import aeroscape from "../assets/aeroscape.png";
-import portfolio from "../assets/portfolio.png";
+import blogImage from "../assets/blogwebsite.png";
 
 const Project = () => {
   const projects = [
     {
-      tittle: "Aeroscape(Airline Reservation System)",
+      tittle: "Blog Website",
       description:
-        "Aeroscape is an airline reservation system which allows users to search for flights and book them.",
-      src: `${aeroscape}`,
-      link: "https://aeroscape.infinityfreeapp.com/",
+        "TAn engaging blog website built with the MERN stack, offering a dynamic platform for publishing and managing posts with real-time updates and interactive features.",
+      src: `${blogImage}`,
+      link: "",
+      githubLink: "https://github.com/kakkar2/mern-blog-app",
     },
     {
-      tittle: "MyPortfolio",
+      tittle: "Airline Reservation System",
       description:
-        "This is a portfolio website that can help you to know me a little. It is made using ReactJS and Tailwind CSS.",
-      src: `${portfolio}`,
-      link: "https://kakkar2.github.io/MyPortfolio/",
+        "Aeroscape is a robust airline reservation system developed using core PHP, providing efficient flight booking, management, and real-time availability features.",
+      src: `${aeroscape}`,
+      link: "https://aeroscape.infinityfreeapp.com/",
+      githubLink: "",
     },
   ];
 
@@ -29,10 +32,10 @@ const Project = () => {
           Project<span className="text-indigo-600">s</span>
         </h2>
       </div>
-      <div className="flex lg:justify-center justify-between items-center flex-wrap gap-3 text-white p-10 md:w-full lg:w-full">
+      <div className="flex justify-center items-center flex-wrap gap-4 text-white p-10 md:w-full lg:w-full">
         {projects.map((item) => (
           <div
-            className="group flex-1 gap-2 items-center p-2 md:3/12 lg:9/12 rounded-lg cursor-pointer bg-gray-800 shadow-lg h-auto md:min-h-full lg:min-h-full"
+            className="group w-60 md:w-64 lg:w-96 gap-2 items-center p-2 md:3/12 lg:9/12 rounded-lg cursor-pointer bg-gray-800 shadow-lg h-auto md:min-h-full lg:min-h-full"
             key={item.tittle}
           >
             <div className="flex-1 image bg-contain">
@@ -50,16 +53,23 @@ const Project = () => {
                 </h2>
               </div>
               <div className="description mb-3">
-                <p className="text-gray-400 text-justify md:text-left lg:text-left">
-                  {item.description}
-                </p>
+                <p className="text-gray-400 text-left">{item.description}</p>
               </div>
-              <a
-                href={item.link}
-                className="text-sm bg-indigo-600 px-2 py-3 rounded-lg hover:bg-gray-700 transition duration-300 ease-in-out active:opacity-85"
-              >
-                <FontAwesomeIcon icon={faTowerBroadcast} /> Live Link
-              </a>
+              {item.githubLink != "" ? (
+                <a
+                  href={item.githubLink}
+                  className="text-sm bg-indigo-600 px-3 py-3 rounded-lg hover:bg-gray-700 transition duration-300 ease-in-out active:opacity-85 justify-self-end"
+                >
+                  <FontAwesomeIcon icon={faGithub} /> Github
+                </a>
+              ) : (
+                <a
+                  href={item.link}
+                  className="text-sm bg-indigo-600 px-3 py-3 rounded-lg hover:bg-gray-700 transition duration-300 ease-in-out active:opacity-85 justify-self-end"
+                >
+                  <FontAwesomeIcon icon={faTowerBroadcast} /> Live
+                </a>
+              )}
             </div>
           </div>
         ))}
